@@ -1,0 +1,60 @@
+.for-client {
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 104px;
+}
+
+.for-client__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.for-client__subtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    width: 815px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .for-client {
+        margin: 30px auto 56px auto;
+    }
+    .for-client__title {
+        margin-left: 42px;
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: 0px;    
+    }
+
+    .for-client__subtitle {
+        margin-left: 42px;
+        margin-right: 40px;
+        max-width: 688px;    
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .for-client {
+        margin: 20px auto 36px auto;
+    }
+
+    .for-client__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-left: 16px;
+        letter-spacing: 0px;    
+    }
+
+    .for-client__subtitle {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 16px;    
+        max-width: 288px;
+    }
+}

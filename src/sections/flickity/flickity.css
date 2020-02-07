@@ -1,0 +1,26 @@
+.flickity {
+  width: 100px;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flickity__carousel {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.flickity__containers {
+  width: 400px;
+  height: 288px;
+  margin-top: 0;
+}
+
+.flickity__container {
+  background: #FFFFFF;
+  height: 262px;
+  border-radius: 16px;
+}

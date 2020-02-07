@@ -1,0 +1,81 @@
+.gh-cards {
+    width: 400px;
+    height: 288px;  
+}
+
+.gh-cards__date {
+    width: 192px;
+    height: 22px;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B6BCBF;  
+}
+
+.gh-cards__history {
+    width: 352px;
+    height: 64px;
+    margin-left: 24px;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    grid-template-rows:  32px 32px ;
+    grid-template-areas:
+    "photo name"
+    "photo mail";
+    grid-column-gap: 16px;
+    justify-content: center;
+  
+}
+
+.gh-cards__img {
+    grid-area: photo;
+}
+
+.gh-cards__name {
+    width: 220px;
+    height: 30px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    grid-area: name;
+    font-family: Robotoslab, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
+    color: #1A1B22;
+}
+
+.gh-cards__mail {
+    width: 220px;
+    height: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-area: mail;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1A1B22;
+}
+
+.gh-cards__title {
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;  
+}
+
+.gh-cards__span {
+    background-color: #F5F6F7;
+}

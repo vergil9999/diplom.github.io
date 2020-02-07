@@ -1,0 +1,156 @@
+.diagram {
+    background: #F5F6F7;
+}
+
+.diagram__wrap {
+    margin: 80px 104px 0px 104px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.diagram__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Robotoslab, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #1A1B22;
+    width: 100%;
+    font-weight:bold
+}
+
+.diagram__info {
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #1A1B22;
+}
+
+.diagram__date {
+    text-transform: uppercase;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+    width: 60px ;
+    margin-top: 0;
+    margin-right: 44px;
+    height: 100%;
+    text-align: start;
+    margin-bottom: 16px;
+}
+
+.diagram__mentions {
+    text-transform: uppercase;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B6BCBF;
+    width: 50%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.diagram__values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 104px;
+    width: calc(100% - 104px);
+    padding-top: 10px;
+}
+
+.diagram__value {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #B6BCBF;
+}
+
+.diagram__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.diagram__date-values {
+    display: flex;
+    flex-direction: row;
+}
+
+.diagram__date-value {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    width: 104px;
+    height: 24px;
+}
+
+.diagram__charts-value {
+    grid-area: value;
+    margin-left: 0px;
+    background: #2F71E5;
+    color: white;
+    height: 24px;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.diagram__charts-monday {
+    width: calc((100% - 0em)*0.15);
+}
+
+.diagram__charts-tuesday {
+    width: calc((100% - 0em)*0.18);
+}
+
+.diagram__charts-wednesday {
+    width: calc((100% - 0em)*0.11);
+}
+
+.diagram__charts-thursday {
+    width: calc((100% - 0em)*0.39);
+}
+
+.diagram__charts-friday {
+    width: calc((100% - 0em)*0.45);
+}
+
+.diagram__charts-saturday {
+    width: calc((100% - 0em)*0.73);
+}
+
+.diagram__charts-sunday {
+    width: calc((100% - 0em)*0.34);
+}
+
+.diagram__value-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 104px;
+    width: calc(100% - 104px);
+    padding-top: 0px;
+}

@@ -1,0 +1,9 @@
+@import url(../vendor/normalize.css);
+@import url(../sections/header/header.css);
+@import url(../sections/for-client/for-client.css);
+@import url(../sections/page/page.css);
+@import url(../sections/technologies/technologies.css);
+@import url(../sections/author/author.css);
+@import url(../sections/slide/slide.css);
+@import url(../sections/flickity/flickity.css);
+@import url(../sections/gh-cards/gh-cards.css);
