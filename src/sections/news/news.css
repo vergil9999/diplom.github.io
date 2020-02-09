@@ -1,9 +1,41 @@
+@font-face {
+    font-family: 'Robotoslab';
+    font-size: normal;
+    src: url('../../fonts/robotoslab-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: normal;
+    src: url('../../fonts/roboto-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: medium;
+    src: url('../../fonts/roboto-medium-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Robotoslab';
+    font-size: bold;
+    src: url('../../fonts/RobotoSlab-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Source-Sans-pro';
+    font-size: normal;
+    src: url('../../fonts/source-sans-pro-regular.woff') format('woff');
+  }
+
+
 .news {
     position: relative;
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows:  576px 576px;
     grid-gap: 16px;
+    background: #F5F6F7;
 }
 
 .news__image {

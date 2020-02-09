@@ -4,15 +4,15 @@
    <title>Diplom</title>
    <meta charset="UTF-8">
    <title>About</title>
-   <link rel='stylesheet' href ='../src/about/about.css'>
+   <link rel='stylesheet' href ="<%=htmlWebpackPlugin.files.chunks.about.css %>">
  </head>
  <body>
     <div class='page'>
-        <header class='header about'>
+        <header class='header'>
             <a href ='./main.html' class ='header__logo header__analyticks'>NewsAnalyzer</a>
             <div class ='links'>
-                <a href ='./main.html' class= 'header__link header__link_main header__link_active header__anakitycsk_main '>Главная</a>
-                <a href ='./about.html' class= 'header__link header__link_about header__link_active header__anakitycsk_about '>О проекте</a>
+                <a href ='./main.html' class= 'header__link header__link_main header__link_active header__about_main '>Главная</a>
+                <a href ='./about.html' class= 'header__link  header__link_active header__about_about'>О проекте</a>
             </div>  
         </header>
         <section class = 'for-client'>
@@ -57,14 +57,13 @@
             </div>
           </section>    
 
-          <div class = 'slide'>
+          <section class = 'slide'>
               <div class = 'slide__header'>
                   <h2 class = 'slide__title'>История коммитов из GitHub</h2>
                   <a href='' class = 'slide__gh'>Открыть в GitHub ></a>
               </div>
 
               <div class = 'flickity'>
-                  <div class = 'flickity__carousel' data-flickity='{ "freeScroll": true }'>
                       <div class = 'flickity__containers'>
                           <div class = 'flickity__container gh-cards'>
                               <h4 class = 'gh-cards__date'>14 августа, 2019</h4>
@@ -77,7 +76,7 @@
                                 developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
                           </div>
 
-                          <div class = 'flickity__container gh-cards'>
+                          <div class = 'flickity__container gh-cards '>
                             <h4 class = 'gh-cards__date'>14 августа, 2019</h4>
                             <div class = 'gh-cards__history'>
                                 <img src='./images/avatar-gh.png' class = 'gh-cards__img' alt = 'avatar'>
@@ -86,6 +85,18 @@
                             </div>
                             <p class = 'gh-cards__title'>You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <span class = 'gh-cards__span'>  Tools >
                                 Plugins > Available plugins</span>and find and install Emmet plugin.</p>
+                        </div>
+
+                        <div class = 'flickity__container gh-cards '>
+                            <h4 class = 'gh-cards__date'>14 августа, 2019</h4>
+                            <div class = 'gh-cards__history'>
+                                <img src='./images/avatar-gh.png' class = 'gh-cards__img' alt = 'avatar'>
+                                <p class = 'gh-cards__name'>Инга Иванова</p>
+                                <p class = 'gh-cards__mail'>ingaiva@yandex.ru</p>
+                            </div>
+                            <p class = 'gh-cards__title'>With Emmet, you can type CSS-like expressions 
+                                that can be dynamically parsed, and produce 
+                                output depending on what you type in the abb...</p>
                         </div>
 
                         <div class = 'flickity__container gh-cards'>
@@ -99,26 +110,7 @@
                                 that can be dynamically parsed, and produce 
                                 output depending on what you type in the abb...</p>
                         </div>
-                        <div class = 'flickity__container gh-cards'>
-                            <h4 class = 'gh-cards__date'>14 августа, 2019</h4>
-                            <div class = 'gh-cards__history'>
-                                <img src='./images/avatar-gh.png' class = 'gh-cards__img' alt = 'avatar'>
-                                <p class = 'gh-cards__name'>Антон Долинин</p>
-                                <p class = 'gh-cards__mail'>anton@yandex.ru</p>
-                            </div>
-                            <p class = 'gh-cards__title'>Emmet (formerly Zen Coding) is a web-
-                              developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                        </div>
-                        <div class = 'flickity__container gh-cards'>
-                            <h4 class = 'gh-cards__date'>14 августа, 2019</h4>
-                            <div class = 'gh-cards__history'>
-                                <img src='./images/avatar-gh.png' class = 'gh-cards__img' alt = 'avatar'>
-                                <p class = 'gh-cards__name'>Мария Фёдорова</p>
-                                <p class = 'gh-cards__mail'>mariiifed@yandex.ru</p>
-                            </div>
-                            <p class = 'gh-cards__title'>You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <span class = 'gh-cards__span'>  Tools >
-                                Plugins > Available plugins</span>and find and install Emmet plugin.</p>
-                        </div>
+
                         <div class = 'flickity__container gh-cards'>
                             <h4 class = 'gh-cards__date'>14 августа, 2019</h4>
                             <div class = 'gh-cards__history'>
@@ -130,12 +122,50 @@
                                 that can be dynamically parsed, and produce 
                                 output depending on what you type in the abb...</p>
                         </div>
+
+
 
 
                   </div>
               </div>
-            </div>
+              <a href="#" class="slide__gh_button">Открыть в Github</a>
           </section>
+          <footer class = 'footer'>
+            <a href='' class='footer__copyright'>&copy;2019 Supersite</a>
+            <ui class ='footer__links'>
+              <li> <a href='./main.html' class ='footer__link footer__link_main'>Главная</a> </li> 
+              <li>  <a href='./about.html' class = 'footer__link footer__link_about'>О проекте</a></li> 
+              <li> <a herf='https://praktikum.yandex.ru' class='footer__link footer__link_teacher'>Яндекс.Практикум</a></li>
+            </ui>
+          
+            <div class = 'footer__icons'>
+              <a href = 'https://github.com' class ='footer__git'></a>
+              <a href = 'https://facebook.com' class = 'footer__face'></a>
+            </div>
+          </footer>    
     </div>
- </body>
+
+    <script src="flickity.pkgd.min.js"></script>
+    <script>
+        var elem = document.querySelector('.flickity__containers');
+        var flkty = new Flickity( elem, {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        groupCells: 2,
+        freeScroll: true,
+        selectedAttraction: 0.01,
+        friction: 0.15,
+        contain: true
+        });
+
+        // element argument can be a selector string
+        //   for an individual element
+        var flkty = new Flickity( '.flickity__containers', {
+        // options  
+        });
+    </script>
+    <!--mainJS-->
+    <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
  </html>

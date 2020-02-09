@@ -1,6 +1,42 @@
+@font-face {
+    font-family: 'Robotoslab';
+    font-size: normal;
+    src: url('../../fonts/robotoslab-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: normal;
+    src: url('../../fonts/roboto-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: medium;
+    src: url('../../fonts/roboto-medium-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Robotoslab';
+    font-size: bold;
+    src: url('../../fonts/RobotoSlab-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Source-Sans-pro';
+    font-size: normal;
+    src: url('../../fonts/source-sans-pro-regular.woff') format('woff');
+  }
+  
+
 .loading {
     background: #F5F6F7;
     position: relative;
+}
+
+.loading__padding {
+    background: #F5F6F7;
+    padding-top: 80px;
 }
 
 .loading__ellipse {
@@ -11,12 +47,12 @@
     border-bottom-color: #888;
     border-radius: 50%;
     margin: auto;
-    margin-top: 80px;
     animation: spin .75s infinite linear;
 }
 
 .loading__title {
     width: 100%;
+    font-family: Roboto;
     text-align: center;
     font-size: 18px;
     line-height: 24px;

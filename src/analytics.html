@@ -5,7 +5,7 @@
    <title>Diplom</title>
    <meta charset="UTF-8">
    <title>Analytics</title>
-   <link rel='stylesheet' href ='../src/analyticks/analyticks.css'>
+   <link rel='stylesheet' href ="<%=htmlWebpackPlugin.files.chunks.analyticks.css %>">
  </head>
 
 
@@ -92,8 +92,8 @@
         <a href='' class='footer__copyright'>&copy;2019 Supersite</a>
         <ui class ='footer__links'>
           <li> <a href='./main.html' class ='footer__link footer__link_main'>Главная</a> </li> 
-          <li>  <a href='' class = 'footer__link footer__link_about'>О проекте</a></li> 
-          <li> <a herf='' class='footer__link footer__link_teacher'>Яндекс.Практикум</a></li>
+          <li>  <a href='./about.html' class = 'footer__link footer__link_about'>О проекте</a></li> 
+          <li> <a herf='https://praktikum.yandex.ru' class='footer__link footer__link_teacher'>Яндекс.Практикум</a></li>
         </ui>
       
         <div class = 'footer__icons'>
@@ -102,6 +102,6 @@
         </div>
       </footer>
 
-
+      <script src="analyticks/analyticks.js"></script>
  </body>
  </html>

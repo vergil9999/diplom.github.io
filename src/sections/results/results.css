@@ -1,8 +1,39 @@
+@font-face {
+    font-family: 'Robotoslab';
+    font-size: normal;
+    src: url('../../fonts/robotoslab-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: normal;
+    src: url('../../fonts/roboto-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: medium;
+    src: url('../../fonts/roboto-medium-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Robotoslab';
+    font-size: bold;
+    src: url('../../fonts/RobotoSlab-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Source-Sans-pro';
+    font-size: normal;
+    src: url('../../fonts/source-sans-pro-regular.woff') format('woff');
+  }
+
+
 .results {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-
+    background: #F5F6F7;
 }
 
 .results__header {
@@ -14,7 +45,7 @@
 }
 
 .results__title {
-    font-family: Roboto Slab;
+    font-family: 'Robotoslab', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
