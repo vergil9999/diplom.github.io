@@ -14,7 +14,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'scripts/[name].[chunkhash].js'
+    filename: '[name].[chunkhash].js'
 
   },
   module: {
@@ -22,7 +22,7 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|ico|svg)$/i,
         use: [
-          'file-loader?name=../dist/images/[name].[ext]',
+          'file-loader?name=./images/[name].[ext]',
           {
             loader: 'image-webpack-loader',
             options: {
@@ -35,7 +35,7 @@ module.exports = {
       
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=../dist/fonts/[name].[ext]'
+        loader: 'file-loader?name=./fonts/[name].[ext]'
       },
       {
         test: /\.js$/,
@@ -57,8 +57,8 @@ module.exports = {
   
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles/[name].[contenthash].css'
-    }),
+      filename: '[name].[contenthash].css'
+        }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
@@ -79,7 +79,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: './src/analytics.html',
+      template: './src/analyticks.html',
       filename: 'analytics.html',
     }),
 
