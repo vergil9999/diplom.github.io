@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Robotoslab';
+    font-size: normal;
+    src: url('../../fonts/robotoslab-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: normal;
+    src: url('../../fonts/roboto-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: medium;
+    src: url('../../fonts/roboto-medium-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Robotoslab';
+    font-size: bold;
+    src: url('../../fonts/RobotoSlab-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Source-Sans-pro';
+    font-size: normal;
+    src: url('../../fonts/source-sans-pro-regular.woff') format('woff');
+  }
+
+
+.author {
+    display: flex;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.author__image {
+    width: 454px;
+    height: 454px;
+    margin-top: 80px;
+    margin-left: 104px;
+    margin-bottom: 80px;
+    margin-right: 56px;
+    border-radius: 1000px;
+}
+
+.author__about {
+    margin-top: 130px;
+    margin-left: 55px;
+}
+
+.author__title {
+    margin: 0;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.author__subtitle {
+    max-width: 605px;
+    margin: 24px 0 0 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .author {
+        height: 312px;
+    }
+
+    .author__image {
+        width: 232px;
+        height: 232px;
+        margin: 60px 32px 40px 40px;
+    }
+
+    .author__about {
+        max-width: 80%;
+        margin-top: 42px;
+        margin-left: 32px;
+        margin-right: auto;
+    }
+
+    .author__title {
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 424px;
+        margin-bottom: 16px;
+    }
+
+    .author__subtitle {
+        max-width: 424px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .author {
+        flex-direction: column;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .author__about {
+        margin-top: 0px;
+        margin-right: 16px;
+        margin-left: 16px;
+        margin-bottom: 32px;
+    }
+    .author__image {
+        max-width: 272px;
+        max-height: 272px;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .author__title {
+        max-width: 288px;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+
+    .author__subtitle {
+        max-width: 288px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 0px;
+    }
+}

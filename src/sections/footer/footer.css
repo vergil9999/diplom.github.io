@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Robotoslab';
+    font-size: normal;
+    src: url('../../fonts/robotoslab-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: normal;
+    src: url('../../fonts/roboto-regular-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    font-size: medium;
+    src: url('../../fonts/roboto-medium-webfont.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Robotoslab';
+    font-size: bold;
+    src: url('../../fonts/RobotoSlab-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Source-Sans-pro';
+    font-size: normal;
+    src: url('../../fonts/source-sans-pro-regular.woff') format('woff');
+  }
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer li {
+    list-style-type: none;
+    float: left;
+}
+.footer__copyright {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #B6BCBF;
+    margin: auto 0 auto 104px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 24px auto;
+}
+
+.footer__link {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #1A1B22
+}
+
+.footer__link_main {
+    margin-right: 25px;
+}
+
+.footer__link_about {
+    margin-right: 25px;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 104px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer__git {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../images/Vector.png);
+    background-size: contain;
+    margin-right: 28px;
+}
+
+.footer__face {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../images/facebook.png);
+    background-size: contain;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .footer {
+        height: 64px;
+    }
+
+    .footer__copyright {
+        height: 22px;
+        max-width: 125px;
+        margin: 24px 0 18px 40px;    
+    }
+
+    .footer__links {
+        width: 380px;
+        height: 22px;
+        margin: 21px auto;
+        padding-left: 0;    
+    }
+
+    .footer__git {
+        width: 20px;
+        height: 20px;    
+    }
+
+    .footer__face {
+        width: 20px;
+        height: 20px;    
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer {
+        height: 224px;
+        display: grid;
+        grid-template-areas:
+        "nav icons"
+        "copyright icons";
+    }
+
+    .footer__copyright {
+        grid-area: copyright;
+        height:22px;
+        max-width: 200px;
+        margin: 18px 0 0 16px;
+    }
+    
+    .footer__links {
+        grid-area: nav;
+        height: 120px;
+        max-width: 184px;
+        margin: 0;
+        padding:0;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-top: 16px;    
+    }
+
+    .footer__icons {
+        grid-area: icons;
+        height: 24px;
+        max-width: 74px;
+        margin: 20px 14px auto auto;
+    
+    }
+}

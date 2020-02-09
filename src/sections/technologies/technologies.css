@@ -1,0 +1,114 @@
+.technologies {
+    background: #F5F6F7;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 334px;  
+}
+
+.technologies__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: 80px;
+    margin-left: 104px;
+    height: 92px;
+    max-width: 344px;
+    font-size: bold;  
+}
+
+.technologies__wrap {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows:  153px;
+    grid-gap: 40px;
+    justify-content: space-between;
+    width: 600px;
+    height: 153px;
+    margin: 93px 216px 88px auto;    
+}
+
+
+.technologies__subtitle {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 9px;  
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.technologies__img {
+    width: 120px;
+    height: 120px;
+  }
+
+.technologies__img_html {
+    background-image: url(../../images/html.svg);
+    background-size: auto;
+}
+
+.technologies__img_css {
+    background-image: url(../../images/css.svg);
+    background-size: auto;
+}
+
+.technologies__img_js {
+    background-image: url(../../images/js.svg);
+    background-size: auto;
+}
+
+.technologies__img_wp {
+    background-image: url(../../images/webpack.svg);
+    background-size: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .technologies {
+        flex-direction: column;
+        height: 340px;
+        justify-content: space-around;
+        }
+
+    .technologies__title {
+        width: 336px;
+        height: 68px;
+        margin: 40px auto 0 40px;
+        font-size: 30px;
+        line-height: 34px;
+        }
+
+    .technologies__wrap {
+        min-width: 672px;
+        height: 153px;
+        margin: 40px auto 40px auto;
+        }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .technologies {
+        flex-direction: column;
+        height: 528px;    
+    }
+
+    .technologies__title {
+        margin: 32px auto 0 16px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 40px;    
+    }
+
+    .technologies__wrap {
+        grid-template-columns: 120px 120px ;
+        grid-template-rows:  153px 153px;
+        grid-gap: 32px;
+        margin: 40px auto 40px auto;
+        width: 272px;
+        height: 338px;    
+    }
+}
